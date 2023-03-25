@@ -1,0 +1,60 @@
+\documentclass[a4paper]{article}
+% ----------------------------------------------------
+%       PAQUETERIA
+% ----------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+%Para modificar los margenes
+\usepackage[left=2cm,right=2cm,bottom=3cm,top=3cm]{geometry}
+%-------------------------------------------------------------------------------
+\usepackage[table,xcdraw,dvipsnames]{xcolor}%Para poder agregar colores
+%DEFINITION OF COLORS
+\definecolor{PUCP}{HTML}{1034A6}
+%-------------------------------------------------------------------------------
+\usepackage[hidelinks]{hyperref}%usepackage of links
+%-------------------------------------------------------------------------------
+% Se uso en la portada de este documento para centra el título que tiene
+\usepackage{setspace}
+%-------------------------------------------------------------------------------
+%				EXTRAS
+\parindent = 0mm%Para eliminar la sangría de las páginas
+%-------------------------------------------------------------------------------
+% 					DEFINIR EL ESTILO DE LA PÁGINA
+\usepackage[myheadings]{fancyhdr}% Configuraciones de stylo de página y cabecera
+\pagestyle{fancy}%Para decir que vamos a trabajar con el style FANCY
+\fancyhf{}%Para vaciar las configuraciones por defecto del style FANCY
+\setlength{\headheight}{40pt}%Para agrandar la cabecera
+% \lhead{\includegraphics[width=3cm]{ssd-vs-hdd.png}} %definimos la cabecera derecha
+\rhead{\Large\thepage}
+\chead{\LARGE\textsl{Tarea Específica}}
+\renewcommand{\headrulewidth}{3pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{PUCP}\leaders\hrule height \headrulewidth\hfill}}
+%-------------------------------------------------------------------------------
+
+\title{Examen Final}
+\author{Jesus Huayhua}
+
+\begin{document}
+  \include{cover/cover.tex}
+	\newpage
+  \tableofcontents
+  \newpage
+  \section{Introducción}
+  \subsection{Tema}
+  \subsection{Importancia}
+  \subsection{Objetivo}
+  \subsection{Estructura del informe}
+  \section{CAPÍTULO 1: RECOLECCIÓN DE INFORMACIÓN}
+  \subsection{Sección 1.1: Construcción del Cuestionario}
+  \subsubsection{Explicación de las ventajas}
+  \subsubsection{Explicación del método}
+  \subsubsection{Cuadro resumen}
+  \subsection{Seción 1.2: Entrevistas}
+  \subsection{Seción 1.3: Documentación de la Entrevistas: Procesos}
+  \section{ CAPÍTULO 2: ANÁLISIS DEL SISTEMA Y DISEÑO PRELIMINAR}
+  
+
+\end{document}
