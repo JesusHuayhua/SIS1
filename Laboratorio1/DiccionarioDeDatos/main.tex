@@ -1,0 +1,76 @@
+\documentclass[a4paper]{article}
+% ----------------------------------------------------
+%       PAQUETERIA
+% ----------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[spanish]{babel}
+%Para modificar los margenes
+\usepackage[left=2cm,right=2cm,bottom=3cm,top=3cm]{geometry}
+%-------------------------------------------------------------------------------
+\usepackage[table,xcdraw,dvipsnames]{xcolor}%Para poder agregar colores
+%DEFINITION OF COLORS
+\definecolor{PUCP}{HTML}{1034A6}
+%-------------------------------------------------------------------------------
+\usepackage[hidelinks]{hyperref}%usepackage of links
+%-------------------------------------------------------------------------------
+% Se uso en la portada de este documento para centra el título que tiene
+\usepackage{setspace}
+%-------------------------------------------------------------------------------
+%				EXTRAS
+\parindent = 0mm%Para eliminar la sangría de las páginas
+%-------------------------------------------------------------------------------
+% 					DEFINIR EL ESTILO DE LA PÁGINA
+\usepackage[myheadings]{fancyhdr}% Configuraciones de stylo de página y cabecera
+\pagestyle{fancy}%Para decir que vamos a trabajar con el style FANCY
+\fancyhf{}%Para vaciar las configuraciones por defecto del style FANCY
+\setlength{\headheight}{40pt}%Para agrandar la cabecera
+% \lhead{\includegraphics[width=3cm]{ssd-vs-hdd.png}} %definimos la cabecera derecha
+\rhead{\Large\thepage}
+\chead{\LARGE\textsl{Tarea Específica}}
+\renewcommand{\headrulewidth}{3pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{PUCP}\leaders\hrule height \headrulewidth\hfill}}
+%-------------------------------------------------------------------------------
+
+\title{Examen Final}
+\author{Jesus Huayhua}
+
+\begin{document}
+  \include{cover/cover.tex}
+	% \newpage
+  % \tableofcontents
+  \newpage
+  \begin{center}
+    \LARGE Diccionario De Datos
+  \end{center}
+  \begin{itemize}
+    \item [$\bullet$] \textbf{ORDERNUMBER:} Número de identificación única para cada orden realizada por un cliente de la empresa Collectibles Inc.
+    \item [$\bullet$] \textbf{QUANTITYORDERED:} Cantidad de productos ordenados por el cliente en una sola orden.
+    \item [$\bullet$] \textbf{PRICEEACH:} Precio unitario de cada productos.
+    \item [$\bullet$] \textbf{ORDENLINENUMBER:} Número de identificación única para cada línea de la orden de un cliente.
+    \item [$\bullet$] \textbf{SALES:} Ingresos totales generados por una sola orden de un cliente.
+    \item [$\bullet$] \textbf{ORDERDATE:} Fecha en que se realizó la orden.
+    \item [$\bullet$] \textbf{STATUS:}  Estado actual de la orden. Puese ser "Shipped", "Cancelled" o "In Process".
+    \item [$\bullet$] \textbf{QTR\_ID:} Número de identificación única para cada trimestre del año fiscal.
+    \item [$\bullet$] \textbf{MONTH\_ID:} Número de identificación única para cada mes del año fiscal.
+    \item [$\bullet$] \textbf{YEAR\_ID:} Número de identificación única para cada año fiscal.
+    \item [$\bullet$] \textbf{PRODUCTLINE:} Categoría de productos a la que pertenece un producto específico.
+    \item [$\bullet$] \textbf{MSRP:} Precio minorista sugerido por el fabricante para cada producto.
+    \item [$\bullet$] \textbf{CUSTOMERNAME:} Nombre del cliente que realizó la orden.
+    \item [$\bullet$] \textbf{PRODUCTCODE:} Código único asignado para producto.
+    \item [$\bullet$] \textbf{PHONE:} Número de teléfono del cliente.
+    \item [$\bullet$] \textbf{ADDRESSLINE1:} Primera línea de la dirección de envío del cliente.
+    \item [$\bullet$] \textbf{ADDRESSLINE2:} Segunda línea de la dirección de envío del cliente.
+    \item [$\bullet$] \textbf{CITY:} Ciudad donde se entregará la orden.
+    \item [$\bullet$] \textbf{STATE:} En algunos países, se puede especificar el estado en el que se encuentra la ciudad ingresada.
+    \item [$\bullet$] \textbf{POSTALCODE:} Código postal de la dirección de envío del cliente.
+    \item [$\bullet$] \textbf{COUNTRY:} País donde se entregará la orden.
+    \item [$\bullet$] \textbf{TERRITORY:} Territorio asignado a la sucursal responsable de procesar la orden.
+    \item [$\bullet$] \textbf{CONTACTLASTNAME:} Apellido del contacto del cliente que realizó la orden.
+    \item [$\bullet$] \textbf{CONTACFIRSTNAME:} Nombre del contacto del cliente que realizó la orden.
+    \item [$\bullet$] \textbf{DEALSIZE:} Tamaño de la orden o negocio relacionado con la orden. Puede ser "Small", "Medium" o "Large".
+  \end{itemize}
+
+\end{document}
